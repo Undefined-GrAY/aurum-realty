@@ -44,13 +44,15 @@ export default function Home() {
   // --- Refs ---
   const sliderIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
+  //  image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDFy5SKQ1ilgV46AqRUWPFm24d4HgLjAWv2h-EBjnE_NSbXctmwOS4vl9mIC6fI5C_v30rfjGSSyq0XIhtiu1zXOZNt04VYokx34aznlviFTE6PqdT8ATUzE9c9IXs0NVuguSXOw2SEnV0eT9ZAiIMFtcMrnOL-CbhnjcB7-gtUIqsjrAHVTf83y1NaVOcBylSIZC-g2YzVxGJSDRc0GUy7VJ2ybk1X93vwbQfNse_0UhtNXVhQqY4oGA",
+
   // --- Data ---
   const sliderSlides: Slide[] = [
     {
       id: 1,
       title: "Architectural Integrity",
       location: "Bel Air, Los Angeles",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDFy5SKQ1ilgV46AqRUWPFm24d4HgLjAWv2h-EBjnE_NSbXctmwOS4vl9mIC6fI5C_v30rfjGSSyq0XIhtiu1zXOZNt04VYokx34aznlviFTE6PqdT8ATUzE9c9IXs0NVuguSXOw2SEnV0eT9ZAiIMFtcMrnOL-CbhnjcB7-gtUIqsjrAHVTf83y1NaVOcBylSIZC-g2YzVxGJSDRc0GUy7VJ2ybk1X93vwbQfNse_0UhtNXVhQqY4oGA",
+      image: "/images/Architectural-Integrity.png",
       price: "$24,500,000",
     },
     {
@@ -71,7 +73,7 @@ export default function Home() {
       id: 4,
       title: "Oceanfront Estate",
       location: "Malibu, Los Angeles",
-      image: "/images/slide4.png",
+      image: "/images/luxuryhill-villa.jpg",
       price: "$32,500,000",
     },
     {
@@ -88,9 +90,10 @@ export default function Home() {
       id: 1,
       title: "The Maddox Penthouse",
       location: "Tribeca, New York",
-      price: "$8,400,000",
+      price: "$8.4M",
+      // price: "$8,400,000",
       details: ["4 BED", "5 BATH", "6,200 SQFT"],
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXu0sZUidvhA8m7v7mucydRUi1x6xwbYBPnIqn3yt89gnmpssj3KQUbgGpTmrPYTmNbMjgvZH75Jt4aA7fbf8pZ8pAtrJx2oiKXaRyrhpIO6JDbkffUrtnnDAPKTHoGALf-5Va7PyDxNsIcLynkvfXDYXSdfah4MK49C5taAXs3N-xIvuqbNeJXnBx-lFYAxFxy3stk1vTbiaT0fEKPmfFekpuAK9YUZ9SMKAUcQgpdtqM2rDMRcK83mLg",
+      image: "/images/DIFew.jpg",
       tag: "FEATURED",
       city: "New York",
     },
@@ -100,7 +103,8 @@ export default function Home() {
       location: "South Beach, Miami",
       price: "$5,750,000",
       details: ["5 BED", "6 BATH", "4,800 SQFT"],
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuABldNsuMHHaKdaxKT444yLNvQZubUUcgWNHEbWW9KvEqdQRi85CW9Z2F2kO1augjHRV_n7cF2y_ux3gRkY31XuN4KPWnx3Er8aBVe44Nsr-ykexpTnGPfkUy_33b6RiqnEBj8CmlhU0N2YMcuSdr-baWepFSpYu_ah3hpUjqI7oNr0fDRb06VrG_MWLr9QokG-N62oW-lOdPgPd5bDQ2czGSoavb6PKg51ZN-K8cAvgCISG9Hxpbq0jg",
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuABldNsuMHHaKdaxKT444yLNvQZubUUcgWNHEbWW9KvEqdQRi85CW9Z2F2kO1augjHRV_n7cF2y_ux3gRkY31XuN4KPWnx3Er8aBVe44Nsr-ykexpTnGPfkUy_33b6RiqnEBj8CmlhU0N2YMcuSdr-baWepFSpYu_ah3hpUjqI7oNr0fDRb06VrG_MWLr9QokG-N62oW-lOdPgPd5bDQ2czGSoavb6PKg51ZN-K8cAvgCISG9Hxpbq0jg",
       tag: "NEW LISTING",
       city: "Miami",
     },
@@ -110,7 +114,8 @@ export default function Home() {
       location: "Hollywood Hills, LA",
       price: "$12,200,000",
       details: ["6 BED", "8 BATH", "9,100 SQFT"],
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB0u64E9cTwYk8ubL-niB6egilxKZMMkiy5U-hRx8cB6SSb_G-DmfjSIUF4RahzF5pnwiN6PSkBKYHAoSGyUkpEvr5BGh2w_nHvkvnESj6pnaNWrgS2G3ZbZvFOCoz8RR79N-NFRoJJVBVmZH_6VRe80aBo43cA8dAn4ZVuMEXQ3lEDdSDoWGgaYbLugXtbOJrWk1ihiOA0FtBzVnLVeVuNdg53C5_V3xUmePRcJn5Nkk5xqJyBXr2HPQ",
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuB0u64E9cTwYk8ubL-niB6egilxKZMMkiy5U-hRx8cB6SSb_G-DmfjSIUF4RahzF5pnwiN6PSkBKYHAoSGyUkpEvr5BGh2w_nHvkvnESj6pnaNWrgS2G3ZbZvFOCoz8RR79N-NFRoJJVBVmZH_6VRe80aBo43cA8dAn4ZVuMEXQ3lEDdSDoWGgaYbLugXtbOJrWk1ihiOA0FtBzVnLVeVuNdg53C5_V3xUmePRcJn5Nkk5xqJyBXr2HPQ",
       tag: "SOLD",
       city: "Los Angeles",
     },
@@ -118,7 +123,8 @@ export default function Home() {
       id: 4,
       title: "The Park Avenue Duplex",
       location: "Upper East Side, New York",
-      price: "$14,500,000",
+      price: "$14.5M",
+      // price: "$14,500,000",
       details: ["5 BED", "6 BATH", "7,500 SQFT"],
       image: "/images/slide5.png",
       tag: "PRE-MARKET",
@@ -150,29 +156,29 @@ export default function Home() {
     {
       id: 1,
       name: "Victoria Harlow",
-      role: "Senior Property Advisor · New York",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBRM8jamlV3uOSuD0BfYgnKcIkze2rupc7V05R6DzsdGM3n6iSsFdPRMHU89xoJXHfqYhkfVpXCS8ulm4KzzjpDKWlnuPraKmhWwo_VkNqHzWB5McmCuob5mSvhfmfL2ugOJ5HcyH95yyGziIItr3-AeOTtMowirYcNCOjiTBGrWJXh4nenhCYLcQ132G1EVSdYrAmOGyun08inwlWzeufnjmeenx4g1_xSP8D8mdZ54vfyeZdhEurvdA",
+      role: "Senior Property Advisor · NYC",
+      image: "/images/agents/agent-1.jpg",
       email: "v.harlow@aurumrealty.com",
     },
     {
       id: 2,
       name: "Marcus DeLeon",
       role: "Luxury Sales Director · Miami",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBkAxq8rIlHb71kzkmFYU3ZIt78dJx_qa9oTYGQwq0BhiVnZJw52t9Q4WL_nNHrrPgQtHE24jymPZUHqFbf9-ADhA3m9Kh64IA3GVCVtw9ZCrcPxUUOzT87Q0dU7TrNlUhxsG8KEnQ6hhIDUr3GkW6YipRszWmFWxbMf51fIeryjK6DkplcMBMXL8HImFp8mnFfPn33s-Y3mGZi_4zvro7rVcZdxsjSTigzR-ufgDJUXFAaNYB0SI_8NA",
+      image: "/images/agents/agent-2.png",
       email: "m.deleon@aurumrealty.com",
     },
     {
       id: 3,
       name: "Isabelle Chen",
-      role: "Investment Specialist · Los Angeles",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCGHdESoA4WKn8z3BAFMBNMhkpQaJI3eoQ-xKLr-H9kATBJ_m0Dzq-2x19RN6zLohwYUrk1GKTiGjdbNhGfvT_2D67NOBrzPcY86Az05ixq5nf0_8YFA609xbk1wMjiwirNlOlOsLbv4yKcVLMAllYneHSaqFVDdcLf0xxlGHFPhUF8DbDBbmpSDASoK-YxaTIVRzhz1KDador1Hdh7QWTDYdYB9d9OMcqADPuRQERUOxrUOZnR1mBnVw",
+      role: "Investment Specialist · LA",
+      image: "/images/agents/agent-3.png",
       email: "i.chen@aurumrealty.com",
     },
     {
       id: 4,
       name: "James Ashford",
-      role: "Principal Broker · New York",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCDt26bxHl4M2IogaNCCXgdtRtmLDeQsBXkd_qBO28GAEf7hQyA19HZ4CQcXkzi3Opq_cgNGxcWU4ij08LvGq_2NZUf0ByWgeU0K-Tomw9-pj82N62Du0WmIDW9aIDBAP7EJepPo6ofB3XizYb3wjrs471HzfOgE5mKe_uAbZDyOGuZ7JqFkRHEA_IwE99GVS4E1nkPO9-fo2xvJJIAlZt0OQ4DSyv9_yS7vLq4Fm4jGPlxp7kxzr-Wxw",
+      role: "Principal Broker · NYC",
+      image: "/images/agents/agent-4.png",
       email: "j.ashford@aurumrealty.com",
     },
   ];
@@ -227,7 +233,9 @@ export default function Home() {
 
   // Handle Manual Slide Change
   const handlePrevSlide = () => {
-    setActiveSlide((prev) => (prev - 1 + sliderSlides.length) % sliderSlides.length);
+    setActiveSlide(
+      (prev) => (prev - 1 + sliderSlides.length) % sliderSlides.length,
+    );
   };
 
   const handleNextSlide = () => {
@@ -305,7 +313,9 @@ export default function Home() {
               className="md:hidden flex items-center p-2 text-aurum-ivory hover:text-aurum-gold transition-colors"
               aria-label="Open mobile menu"
             >
-              <span className="material-symbols-outlined text-[28px]">menu</span>
+              <span className="material-symbols-outlined text-[28px]">
+                menu
+              </span>
             </button>
           </div>
         </div>
@@ -327,7 +337,9 @@ export default function Home() {
               className="p-2 text-aurum-ivory hover:text-aurum-gold transition-colors"
               aria-label="Close mobile menu"
             >
-              <span className="material-symbols-outlined text-[28px]">close</span>
+              <span className="material-symbols-outlined text-[28px]">
+                close
+              </span>
             </button>
           </div>
           <div className="flex flex-col gap-8">
@@ -387,16 +399,22 @@ export default function Home() {
           <span className="font-label-caps text-aurum-gold block mb-6 tracking-[0.3em] uppercase reveal-on-scroll">
             Luxury Real Estate · Est. 2008
           </span>
-          <h1 className="font-display-lg text-aurum-ivory mb-2 reveal-on-scroll" style={{ transitionDelay: "200ms" }}>
+          <h1
+            className="font-display-lg text-aurum-ivory mb-2 reveal-on-scroll"
+            style={{ transitionDelay: "200ms" }}
+          >
             Where Luxury <br />
-            <span className="italic text-aurum-gold font-headline-lg">Finds Its Address</span>
+            <span className="italic text-aurum-gold font-headline-lg">
+              Finds Its Address
+            </span>
           </h1>
           <p
             className="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12 reveal-on-scroll"
             style={{ transitionDelay: "400ms" }}
           >
-            Exclusive properties in New York, Miami and Los Angeles. Curated for those who expect the exceptional.
-            Experience architectural mastery in every detail.
+            Exclusive properties in New York, Miami and Los Angeles. Curated for
+            those who expect the exceptional. Experience architectural mastery
+            in every detail.
           </p>
           <div
             className="flex flex-col md:flex-row items-center justify-center gap-6 reveal-on-scroll"
@@ -414,10 +432,10 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
+        {/* <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
           <span className="font-label-caps text-[10px]">SCROLL</span>
           <span className="material-symbols-outlined text-[18px]">keyboard_double_arrow_down</span>
-        </div>
+        </div> */}
       </section>
 
       {/* 3. Four Column Stats Bar */}
@@ -433,44 +451,72 @@ export default function Home() {
         </div>
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-7 gap-y-12 gap-x-4 items-center">
           <div className="flex flex-col gap-2 text-center reveal-on-scroll md:col-span-1">
-            <span className="font-headline-lg text-aurum-gold font-bold tracking-tight drop-shadow-[0_4px_12px_rgba(201,168,76,0.15)]">
+            <span className="font-headline-md text-aurum-gold font-bold tracking-tight drop-shadow-[0_4px_12px_rgba(201,168,76,0.15)]">
               $4.2B+
             </span>
-            <span className="font-label-caps text-on-surface-variant text-[10px] md:text-[11px]">Properties Sold</span>
+            <span className="font-label-caps text-on-surface-variant text-[10px] md:text-[11px]">
+              Properties Sold
+            </span>
           </div>
 
           <div className="hidden md:block h-20 w-px bg-gradient-to-b from-transparent via-aurum-gold/20 to-transparent md:col-span-1 justify-self-center"></div>
 
-          <div className="flex flex-col gap-2 text-center reveal-on-scroll md:col-span-1" style={{ transitionDelay: "100ms" }}>
-            <span className="font-headline-lg text-aurum-ivory font-bold tracking-tight">1,200+</span>
-            <span className="font-label-caps text-on-surface-variant text-[10px] md:text-[11px]">Happy Clients</span>
+          <div
+            className="flex flex-col gap-2 text-center reveal-on-scroll md:col-span-1"
+            style={{ transitionDelay: "100ms" }}
+          >
+            <span className="font-headline-md text-aurum-ivory font-bold tracking-tight">
+              1,200+
+            </span>
+            <span className="font-label-caps text-on-surface-variant text-[10px] md:text-[11px]">
+              Happy Clients
+            </span>
           </div>
 
           <div className="hidden md:block h-20 w-px bg-gradient-to-b from-transparent via-aurum-gold/20 to-transparent md:col-span-1 justify-self-center"></div>
 
-          <div className="flex flex-col gap-2 text-center reveal-on-scroll md:col-span-1" style={{ transitionDelay: "200ms" }}>
-            <span className="font-headline-lg text-aurum-gold font-bold tracking-tight drop-shadow-[0_4px_12px_rgba(201,168,76,0.15)]">
+          <div
+            className="flex flex-col gap-2 text-center reveal-on-scroll md:col-span-1"
+            style={{ transitionDelay: "200ms" }}
+          >
+            <span className="font-headline-md text-aurum-gold font-bold tracking-tight drop-shadow-[0_4px_12px_rgba(201,168,76,0.15)]">
               16
             </span>
-            <span className="font-label-caps text-on-surface-variant text-[10px] md:text-[11px]">Years of Excellence</span>
+            <span className="font-label-caps text-on-surface-variant text-[10px] md:text-[11px]">
+              Years of Excellence
+            </span>
           </div>
 
           <div className="hidden md:block h-20 w-px bg-gradient-to-b from-transparent via-aurum-gold/20 to-transparent md:col-span-1 justify-self-center"></div>
 
-          <div className="flex flex-col gap-2 text-center reveal-on-scroll md:col-span-1" style={{ transitionDelay: "300ms" }}>
-            <span className="font-headline-lg text-aurum-ivory font-bold tracking-tight">3</span>
-            <span className="font-label-caps text-on-surface-variant text-[10px] md:text-[11px]">Cities Serving</span>
+          <div
+            className="flex flex-col gap-2 text-center reveal-on-scroll md:col-span-1"
+            style={{ transitionDelay: "300ms" }}
+          >
+            <span className="font-headline-md text-aurum-ivory font-bold tracking-tight">
+              3
+            </span>
+            <span className="font-label-caps text-on-surface-variant text-[10px] md:text-[11px]">
+              Cities Serving
+            </span>
           </div>
         </div>
       </section>
 
       {/* 4. Featured Listings Grid */}
-      <section id="listings" className="py-32 md:py-40 bg-background border-b border-white/5">
+      <section
+        id="listings"
+        className="py-32 md:py-40 bg-background border-b border-white/5 -scroll-mt-22"
+      >
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-16 gap-8">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-12 md:mb-16 gap-8">
             <div>
-              <span className="font-label-caps text-aurum-gold block mb-4">CURATED COLLECTION</span>
-              <h2 className="font-headline-lg text-aurum-ivory">Featured Residences</h2>
+              <span className="font-label-caps text-aurum-gold block mb-4">
+                CURATED COLLECTION
+              </span>
+              <h2 className="font-headline-md text-aurum-ivory">
+                Featured Residences
+              </h2>
             </div>
             {/* Interactive Filters */}
             <div className="flex flex-wrap gap-2 md:gap-4 border-b border-white/10 pb-2">
@@ -494,7 +540,7 @@ export default function Home() {
           </div>
 
           {/* Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter md:gap-y-16">
             {filteredListings.map((property, idx) => (
               <div
                 key={property.id}
@@ -520,7 +566,9 @@ export default function Home() {
                       <h3 className="font-headline-sm text-aurum-ivory group-hover:text-aurum-gold transition-colors duration-300 leading-tight">
                         {property.title}
                       </h3>
-                      <p className="text-on-surface-variant font-body-md italic mt-1">{property.location}</p>
+                      <p className="text-on-surface-variant font-body-md italic mt-1">
+                        {property.location}
+                      </p>
                     </div>
                     <span className="font-headline-sm text-aurum-gold font-semibold whitespace-nowrap">
                       {property.price}
@@ -528,7 +576,10 @@ export default function Home() {
                   </div>
                   <div className="flex gap-6 border-t border-white/10 pt-6 text-on-surface-variant">
                     {property.details.map((detail, index) => (
-                      <span key={index} className="font-label-caps text-[10px] md:text-[11px] tracking-wider">
+                      <span
+                        key={index}
+                        className="font-label-caps text-[10px] md:text-[11px] tracking-wider"
+                      >
                         {detail}
                       </span>
                     ))}
@@ -551,11 +602,17 @@ export default function Home() {
             <div
               key={slide.id}
               className={`absolute inset-0 h-full w-full transition-opacity duration-1000 ease-in-out ${
-                activeSlide === index ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+                activeSlide === index
+                  ? "opacity-100 z-10"
+                  : "opacity-0 z-0 pointer-events-none"
               }`}
             >
               {/* background image */}
-              <img className="absolute inset-0 w-full h-full object-cover" src={slide.image} alt={slide.title} />
+              <img
+                className="absolute inset-0 w-full h-full object-cover"
+                src={slide.image}
+                alt={slide.title}
+              />
               <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/35 to-transparent"></div>
 
               {/* Slide text details */}
@@ -597,19 +654,28 @@ export default function Home() {
             </button>
           </div>
           <div className="font-label-caps text-on-surface-variant tracking-widest text-base min-w-[70px] text-right">
-            <span className="text-aurum-ivory font-semibold">{`0${activeSlide + 1}`}</span> / {`0${sliderSlides.length}`}
+            <span className="text-aurum-ivory font-semibold">{`0${activeSlide + 1}`}</span>{" "}
+            / {`0${sliderSlides.length}`}
           </div>
         </div>
       </section>
 
       {/* 6. Three Cities Section */}
-      <section id="cities" className="py-32 md:py-40 bg-background">
+      <section
+        id="cities"
+        className="py-32 md:py-40 bg-background -scroll-mt-22"
+      >
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="mb-16">
-            <span className="font-label-caps text-aurum-gold block mb-4">GLOBAL REACH</span>
-            <h2 className="font-headline-lg text-aurum-ivory">Our Core Markets</h2>
+          <div className="mb-12 md:mb-16">
+            <span className="font-label-caps text-aurum-gold block mb-4">
+              GLOBAL REACH
+            </span>
+            <h2 className="font-headline-md text-aurum-ivory">
+              Our Core Markets
+            </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter gap-y-8">
+          {/* cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter gap-y-8">
             {/* NY */}
             <div className="group relative h-[450px] md:h-[600px] rounded-3xl overflow-hidden cursor-pointer reveal-on-scroll border border-white/5 hover:border-aurum-gold/30 transition-all duration-500">
               <img
@@ -620,7 +686,7 @@ export default function Home() {
               {/* Dark Gradient Mask - Tall overlay for high contrast */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/10 group-hover:via-black/45 transition-all duration-500"></div>
               <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
-                <h3 className="font-headline-lg text-aurum-ivory mb-2 font-semibold tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                <h3 className="font-headline-md text-aurum-ivory mb-2 font-semibold tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                   New York
                 </h3>
                 <p className="font-label-caps text-aurum-gold mb-4 font-semibold tracking-widest text-[11px] md:text-[12px]">
@@ -645,7 +711,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/10 group-hover:via-black/45 transition-all duration-500"></div>
               <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
-                <h3 className="font-headline-lg text-aurum-ivory mb-2 font-semibold tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                <h3 className="font-headline-md text-aurum-ivory mb-2 font-semibold tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                   Miami
                 </h3>
                 <p className="font-label-caps text-aurum-gold mb-4 font-semibold tracking-widest text-[11px] md:text-[12px]">
@@ -670,7 +736,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/10 group-hover:via-black/45 transition-all duration-500"></div>
               <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
-                <h3 className="font-headline-lg text-aurum-ivory mb-2 font-semibold tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                <h3 className="font-headline-md text-aurum-ivory mb-2 font-semibold tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                   Los Angeles
                 </h3>
                 <p className="font-label-caps text-aurum-gold mb-4 font-semibold tracking-widest text-[11px] md:text-[12px]">
@@ -687,14 +753,23 @@ export default function Home() {
       </section>
 
       {/* 7. How It Works (The Collective Process) */}
-      <section id="process" className="py-32 md:py-40 bg-surface-container-lowest relative overflow-hidden">
+      <section
+        id="process"
+        className="py-32 md:py-40 bg-surface-container-lowest relative overflow-hidden"
+      >
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative">
-          <h2 className="font-headline-lg text-aurum-ivory mb-24 reveal-on-scroll">The Collective Process</h2>
+          <h2 className="font-headline-md text-aurum-ivory mb-24 reveal-on-scroll">
+            The Collective Process
+          </h2>
 
           {/* Dotted lines - Responsive layouts */}
           <div className="relative">
             {/* Desktop Horizontal Line */}
-            <div className="hidden md:block absolute top-[44px] left-[15%] right-[15%] dotted-line opacity-30"></div>
+            <div className="hidden md:flex justify-center ">
+              <div className="align opacity-30 absolute top-[46px] dotted-line ">
+                {/* <div className="hidden md:flex  dotted-line opacity-30 "></div> */}
+              </div>
+            </div>
 
             {/* Mobile Vertical Connector Line (between steps 01 -> 02 -> 03) */}
             <div className="absolute left-[50%] -translate-x-[50%] top-12 bottom-12 w-px dotted-line-vertical md:hidden opacity-25"></div>
@@ -702,37 +777,53 @@ export default function Home() {
             <div className="relative grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-24 items-start">
               {/* Step 1 */}
               <div className="relative flex flex-col items-center gap-8 reveal-on-scroll">
-                <span className="font-headline-lg text-aurum-gold text-7xl md:text-[80px] bg-surface-container-lowest px-6 relative z-10 font-bold drop-shadow-[0_4px_12px_rgba(201,168,76,0.1)]">
-                  01
+                <span className="font-headline-lg text-aurum-gold text-7xl md:text-[80px] bg-surface-container-lowest px-6 py-6  relative z-10 font-bold drop-shadow-[0_4px_12px_rgba(201,168,76,0.1)]  rounded-[50px]">
+                   <div className=" -mt-3 ">01</div>
                 </span>
                 <div className="flex flex-col gap-4">
-                  <h3 className="font-headline-sm text-aurum-ivory tracking-widest uppercase font-semibold">Discover</h3>
+                  <h3 className="font-headline-sm text-aurum-ivory tracking-widest uppercase font-semibold">
+                    Discover
+                  </h3>
                   <p className="text-on-surface-variant font-body-md max-w-xs mx-auto leading-relaxed">
-                    Tell us your vision and budget. We curate a personal selection of properties that match your lifestyle.
+                    Tell us your vision and budget. We curate a personal
+                    selection of properties that match your lifestyle.
                   </p>
                 </div>
               </div>
               {/* Step 2 */}
-              <div className="relative flex flex-col items-center gap-8 reveal-on-scroll" style={{ transitionDelay: "200ms" }}>
-                <span className="font-headline-lg text-aurum-gold text-7xl md:text-[80px] bg-surface-container-lowest px-6 relative z-10 font-bold drop-shadow-[0_4px_12px_rgba(201,168,76,0.1)]">
-                  02
+              <div
+                className="relative flex flex-col items-center gap-8 reveal-on-scroll"
+                style={{ transitionDelay: "200ms" }}
+              >
+                <span className="font-headline-lg text-aurum-gold text-7xl md:text-[80px] bg-surface-container-lowest px-6 py-6  relative z-10 font-bold drop-shadow-[0_4px_12px_rgba(201,168,76,0.1)]  rounded-[50px]">
+                   <div className=" -mt-3 ">02</div>
                 </span>
                 <div className="flex flex-col gap-4">
-                  <h3 className="font-headline-sm text-aurum-ivory tracking-widest uppercase font-semibold">Experience</h3>
+                  <h3 className="font-headline-sm text-aurum-ivory tracking-widest uppercase font-semibold">
+                    Experience
+                  </h3>
                   <p className="text-on-surface-variant font-body-md max-w-xs mx-auto leading-relaxed">
-                    Private viewings at your convenience. No crowds, no pressure. Just you and your future home.
+                    Private viewings at your convenience. No crowds, no
+                    pressure. Just you and your future home.
                   </p>
                 </div>
               </div>
               {/* Step 3 */}
-              <div className="relative flex flex-col items-center gap-8 reveal-on-scroll" style={{ transitionDelay: "400ms" }}>
-                <span className="font-headline-lg text-aurum-gold text-7xl md:text-[80px] bg-surface-container-lowest px-6 relative z-10 font-bold drop-shadow-[0_4px_12px_rgba(201,168,76,0.1)]">
-                  03
+              <div
+                className="relative flex flex-col items-center gap-8 reveal-on-scroll"
+                style={{ transitionDelay: "400ms" }}
+              >
+                <span className="font-headline-lg text-aurum-gold text-7xl md:text-[80px] bg-surface-container-lowest px-6 py-6 relative z-10 font-bold drop-shadow-[0_4px_12px_rgba(201,168,76,0.1)] rounded-[50px]">
+                  <div className=" -mt-3 ">03</div>
+                  
                 </span>
                 <div className="flex flex-col gap-4">
-                  <h3 className="font-headline-sm text-aurum-ivory tracking-widest uppercase font-semibold">Close</h3>
+                  <h3 className="font-headline-sm text-aurum-ivory tracking-widest uppercase font-semibold">
+                    Close
+                  </h3>
                   <p className="text-on-surface-variant font-body-md max-w-xs mx-auto leading-relaxed">
-                    Our experts handle every detail from negotiation to keys in hand. Seamless from offer to ownership.
+                    Our experts handle every detail from negotiation to keys in
+                    hand. Seamless from offer to ownership.
                   </p>
                 </div>
               </div>
@@ -742,18 +833,33 @@ export default function Home() {
       </section>
 
       {/* 8. Agent Grid (Meet the Advisors) */}
-      <section id="advisors" className="py-32 md:py-40 bg-background">
+      <section
+        id="advisors"
+        className="py-32 md:py-40 bg-background -scroll-mt-22"
+      >
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="mb-16">
-            <span className="font-label-caps text-aurum-gold block mb-4">OUR SPECIALISTS</span>
-            <h2 className="font-headline-lg text-aurum-ivory">Meet the Advisors</h2>
+            <span className="font-label-caps text-aurum-gold block mb-4">
+              OUR SPECIALISTS
+            </span>
+            <h2 className="font-headline-md text-aurum-ivory">
+              Meet the Advisors
+            </h2>
           </div>
           {/* Grid layout with increased margin/gap spacing for mobile */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-gutter gap-y-16">
             {advisors.map((advisor, idx) => (
-              <div key={advisor.id} className="group reveal-on-scroll" style={{ transitionDelay: `${idx * 100}ms` }}>
+              <div
+                key={advisor.id}
+                className="group reveal-on-scroll"
+                style={{ transitionDelay: `${idx * 100}ms` }}
+              >
                 <div className="relative overflow-hidden rounded-3xl mb-8 grayscale hover:grayscale-0 transition-all duration-[800ms] aspect-[4/5] shadow-lg border border-white/5 group-hover:border-aurum-gold/20">
-                  <img className="w-full h-full object-cover" src={advisor.image} alt={advisor.name} />
+                  <img
+                    className="w-full h-full object-cover"
+                    src={advisor.image}
+                    alt={advisor.name}
+                  />
                   <div className="absolute bottom-0 left-0 right-0 p-6 flex justify-center gap-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 luxury-blur border-t border-white/5">
                     <a
                       href={`mailto:${advisor.email}`}
@@ -764,7 +870,9 @@ export default function Home() {
                       </span>
                     </a>
                     <button className="p-2 bg-background/50 rounded-full hover:bg-aurum-gold hover:text-on-primary transition-colors duration-300">
-                      <span className="material-symbols-outlined text-aurum-gold group-hover:text-inherit">share</span>
+                      <span className="material-symbols-outlined text-aurum-gold group-hover:text-inherit">
+                        share
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -790,14 +898,17 @@ export default function Home() {
             “
           </span>
           <p className="font-headline-md text-aurum-ivory italic mb-12 leading-relaxed tracking-wide px-4">
-            "Aurum didn't just find us a home. They found us a life we didn't know was possible. Every detail was handled
-            with a level of care I have never experienced from any agency."
+            "Aurum didn't just find us a home. They found us a life we didn't
+            know was possible. Every detail was handled with a level of care I
+            have never experienced from any agency."
           </p>
           <div className="h-px w-24 bg-aurum-gold mb-8"></div>
           <h4 className="font-label-caps text-aurum-ivory tracking-widest text-base md:text-lg mb-2">
             — Jonathan W., Manhattan
           </h4>
-          <p className="font-body-md text-on-surface-variant italic">The Maddox Penthouse · $8.4M</p>
+          <p className="font-body-md text-on-surface-variant italic">
+            The Maddox Penthouse · $8.4M
+          </p>
         </div>
       </section>
 
@@ -806,28 +917,42 @@ export default function Home() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-12 rounded-3xl bg-surface-container border border-white/5 reveal-on-scroll shadow-lg flex flex-col justify-between">
-              <span className="font-display-lg text-aurum-gold block mb-4 font-bold">+18%</span>
+              <span className="font-display-lg text-aurum-gold block mb-4 font-bold">
+                +18%
+              </span>
               <p className="font-body-md text-on-surface-variant leading-relaxed">
-                Luxury market appreciation in 2024 across our core three coastal markets.
+                Luxury market appreciation in 2024 across our core three coastal
+                markets.
               </p>
             </div>
             <div
               className="p-12 rounded-3xl bg-surface-container border border-white/5 reveal-on-scroll shadow-lg flex flex-col justify-between"
               style={{ transitionDelay: "200ms" }}
             >
-              <span className="font-display-lg text-aurum-ivory block mb-4 font-bold">$2.1M</span>
+              <span className="font-display-lg text-aurum-ivory block mb-4 font-bold">
+                $2.1M
+              </span>
               <p className="font-body-md text-on-surface-variant leading-relaxed">
-                Average transaction value closed by Aurum agents in the last fiscal year.
+                Average transaction value closed by Aurum agents in the last
+                fiscal year.
               </p>
             </div>
           </div>
-          <div className="lg:col-span-5 reveal-on-scroll" style={{ transitionDelay: "400ms" }}>
-            <span className="font-label-caps text-aurum-gold block mb-6">MARKET INTELLIGENCE</span>
-            <h2 className="font-headline-lg text-aurum-ivory mb-8 leading-tight">The Luxury Market Is Outperforming</h2>
+          <div
+            className="lg:col-span-5 reveal-on-scroll"
+            style={{ transitionDelay: "400ms" }}
+          >
+            <span className="font-label-caps text-aurum-gold block mb-6">
+              MARKET INTELLIGENCE
+            </span>
+            <h2 className="font-headline-lg text-aurum-ivory mb-8 leading-tight">
+              The Luxury Market Is Outperforming
+            </h2>
             <p className="font-body-lg text-on-surface-variant mb-10 leading-relaxed">
-              Our proprietary market data provides our clients with an unfair advantage. We track not just sales, but the
-              historical and cultural significance of assets that drive long-term value appreciation in the quiet luxury
-              sector.
+              Our proprietary market data provides our clients with an unfair
+              advantage. We track not just sales, but the historical and
+              cultural significance of assets that drive long-term value
+              appreciation in the quiet luxury sector.
             </p>
             <a
               className="group inline-flex items-center gap-3 font-label-caps text-aurum-gold tracking-widest hover:text-aurum-ivory transition-colors"
@@ -843,7 +968,10 @@ export default function Home() {
       </section>
 
       {/* 11. Lead Capture (Redesigned as a Private Club Invite) */}
-      <section id="contact" className="py-32 md:py-40 bg-surface-container-lowest relative overflow-hidden">
+      <section
+        id="contact"
+        className="py-32 md:py-40 bg-surface-container-lowest relative overflow-hidden"
+      >
         {/* Glow behind the card */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-aurum-gold/5 blur-[120px] rounded-full pointer-events-none"></div>
 
@@ -861,24 +989,37 @@ export default function Home() {
           {/* Glassmorphic container with custom inner border */}
           <div className="relative bg-gradient-to-b from-[#161616]/80 to-[#0e0e0e]/95 border border-white/10 rounded-3xl p-10 md:p-16 shadow-2xl backdrop-blur-md overflow-hidden before:absolute before:inset-2 before:border before:border-aurum-gold/10 before:rounded-[20px] before:pointer-events-none">
             <div className="text-center max-w-2xl mx-auto">
-              <span className="font-label-caps text-aurum-gold block mb-8 tracking-[0.25em]">GET EXCLUSIVE ACCESS</span>
-              <h2 className="font-display-lg text-aurum-ivory mb-2 leading-tight">The finest properties,</h2>
-              <h2 className="font-headline-lg italic text-aurum-gold mb-10">before they list.</h2>
+              <span className="font-label-caps text-aurum-gold block mb-8 tracking-[0.25em]">
+                GET EXCLUSIVE ACCESS
+              </span>
+              <h2 className="font-display-lg text-aurum-ivory mb-2 leading-tight">
+                The finest properties,
+              </h2>
+              <h2 className="font-headline-lg italic text-aurum-gold mb-10">
+                before they list.
+              </h2>
               <p className="font-body-lg text-on-surface-variant mb-12 max-w-xl mx-auto leading-relaxed">
-                Join our private client list for early access to off-market properties and quarterly strategic market
-                reports.
+                Join our private client list for early access to off-market
+                properties and quarterly strategic market reports.
               </p>
 
               {emailSubmitted ? (
                 <div className="bg-aurum-gold/10 border border-aurum-gold/30 rounded-lg p-6 text-center animate-fade-in">
-                  <span className="material-symbols-outlined text-aurum-gold text-4xl mb-3">check_circle</span>
-                  <h3 className="font-headline-sm text-aurum-ivory mb-1">Access Request Received</h3>
+                  <span className="material-symbols-outlined text-aurum-gold text-4xl mb-3">
+                    check_circle
+                  </span>
+                  <h3 className="font-headline-sm text-aurum-ivory mb-1">
+                    Access Request Received
+                  </h3>
                   <p className="text-on-surface-variant font-body-md">
                     We will review your submission and contact you shortly.
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleLeadSubmit} className="flex flex-col md:flex-row gap-4 mb-8">
+                <form
+                  onSubmit={handleLeadSubmit}
+                  className="flex flex-col md:flex-row gap-4 mb-8"
+                >
                   <input
                     className="flex-grow bg-[#1A1A1A] border border-white/10 rounded-lg px-6 py-4.5 text-aurum-ivory font-label-caps focus:outline-none focus:border-aurum-gold transition-colors placeholder:text-on-surface-variant/30 text-[12px] tracking-wider"
                     placeholder="YOUR EMAIL ADDRESS"
@@ -915,8 +1056,8 @@ export default function Home() {
                 Aurum Realty
               </span>
               <p className="font-body-md text-on-surface-variant leading-relaxed">
-                Where Luxury Finds Its Address. An architectural collective dedicated to the finest residential assets
-                globally.
+                Where Luxury Finds Its Address. An architectural collective
+                dedicated to the finest residential assets globally.
               </p>
               <div className="flex gap-4 mt-2">
                 <a
@@ -924,51 +1065,74 @@ export default function Home() {
                   className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-aurum-gold hover:border-aurum-gold/30 transition-all"
                   aria-label="Public channel"
                 >
-                  <span className="material-symbols-outlined text-[18px]">public</span>
+                  <span className="material-symbols-outlined text-[18px]">
+                    public
+                  </span>
                 </a>
                 <a
                   href="#"
                   className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-aurum-gold hover:border-aurum-gold/30 transition-all"
                   aria-label="Instagram camera"
                 >
-                  <span className="material-symbols-outlined text-[18px]">photo_camera</span>
+                  <span className="material-symbols-outlined text-[18px]">
+                    photo_camera
+                  </span>
                 </a>
                 <a
                   href="#"
                   className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-aurum-gold hover:border-aurum-gold/30 transition-all"
                   aria-label="Careers history"
                 >
-                  <span className="material-symbols-outlined text-[18px]">work_history</span>
+                  <span className="material-symbols-outlined text-[18px]">
+                    work_history
+                  </span>
                 </a>
               </div>
             </div>
 
             {/* Col 2 */}
             <div className="flex flex-col gap-8">
-              <h4 className="font-label-caps text-aurum-ivory tracking-widest text-[11px]">Properties</h4>
+              <h4 className="font-label-caps text-aurum-ivory tracking-widest text-[11px]">
+                Properties
+              </h4>
               <ul className="flex flex-col gap-3 font-body-md text-on-surface-variant">
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     Featured Listings
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     New York Portfolio
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     Miami Collection
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     Los Angeles Estates
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     Off-Market Access
                   </a>
                 </li>
@@ -977,30 +1141,47 @@ export default function Home() {
 
             {/* Col 3 */}
             <div className="flex flex-col gap-8">
-              <h4 className="font-label-caps text-aurum-ivory tracking-widest text-[11px]">Company</h4>
+              <h4 className="font-label-caps text-aurum-ivory tracking-widest text-[11px]">
+                Company
+              </h4>
               <ul className="flex flex-col gap-3 font-body-md text-on-surface-variant">
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     Our Story
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#advisors">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#advisors"
+                  >
                     Our Agents
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     Market Reports
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     Press Room
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-aurum-gold transition-colors" href="#listings">
+                  <a
+                    className="hover:text-aurum-gold transition-colors"
+                    href="#listings"
+                  >
                     Sustainability
                   </a>
                 </li>
@@ -1009,7 +1190,9 @@ export default function Home() {
 
             {/* Col 4 */}
             <div className="col-span-2 lg:col-span-1 flex flex-col gap-8">
-              <h4 className="font-label-caps text-aurum-ivory tracking-widest text-[11px]">Contact</h4>
+              <h4 className="font-label-caps text-aurum-ivory tracking-widest text-[11px]">
+                Contact
+              </h4>
               <ul className="flex flex-col gap-4 font-body-md text-on-surface-variant">
                 <li>hello@aurumrealty.com</li>
                 <li>+1 (212) 555-0190</li>
@@ -1025,7 +1208,8 @@ export default function Home() {
           {/* Legal / Copyright details */}
           <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="font-label-caps text-[10px] text-on-surface-variant/40 text-center md:text-left">
-              © 2026 AURUM REALTY. AN ARCHITECTURAL COLLECTIVE. ALL RIGHTS RESERVED.
+              © 2026 AURUM REALTY. AN ARCHITECTURAL COLLECTIVE. ALL RIGHTS
+              RESERVED.
             </p>
             <div className="flex flex-wrap justify-center gap-6 font-label-caps text-[10px] text-on-surface-variant/40 uppercase tracking-widest">
               <a className="hover:text-aurum-ivory transition-colors" href="#">
